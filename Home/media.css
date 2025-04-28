@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+    footer .box {
+        flex-direction: column;
+    }
+    footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .box,
+    footer .box.one {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    footer .hfoot,
+    footer .box .headbox,
+    footer .box .made,
+    footer .box .contact {
+        justify-content: center;
+        align-items: center;
+    }
+}

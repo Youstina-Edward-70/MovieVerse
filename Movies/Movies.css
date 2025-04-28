@@ -1,0 +1,387 @@
+:root {
+  --bg-color: #2b2d30;
+  --font-color: #f7f7e6;
+  --button-color: #faaa64;
+  --second-color: #6496fa;
+  --third-color: #a1a1a1;
+  --forth-color: #f7f7f7;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin-top: 120px !important;
+}
+
+/* search-box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.search-box .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.search-box .search {
+  position: absolute;
+  width: 100%;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.search-box i {
+  position: absolute;
+  color: var(--bg-color);
+  right: 10px;
+  cursor: pointer;
+}
+/* end-search-box */
+
+.h4s {
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--button-color);
+}
+
+.card {
+  background-color: transparent !important;
+  border: none;
+  color: white;
+  scale: 1.0115;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 300px;
+  /* object-fit: contain !important; */
+}
+
+.rating {
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+.genre {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--button-color);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #ff8d2a;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+.row.row-cols-1.row-cols-md-5 {
+  justify-content: left !important;
+}
+
+
+
+/*Test*/
+
+/* Media Queries for Main Content Responsiveness */
+
+/* Extra Small Devices (max-width: 576px) - Small Mobile Phones */
+@media (max-width: 576px) {
+  .container.py-4 {
+    padding: 10px;
+    /* Minimal padding for main content */
+  }
+
+  .h4s {
+    font-size: 18px;
+    /* Smaller heading */
+    margin-bottom: 10px;
+  }
+
+  .row.row-cols-1.row-cols-md-5 {
+    margin: 0;
+    /* Remove default row margins */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    flex: 0 0 100%;
+    /* One card per row */
+    max-width: 100%;
+    padding: 5px;
+    /* Reduced padding */
+  }
+
+  .card {
+    scale: 1;
+    /* Remove scale for mobile */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    /* Lighter shadow */
+  }
+
+  .card img {
+    height: 180px;
+    /* Smaller image height */
+    object-fit: cover;
+    /* Ensure image fits */
+  }
+
+  .card-body {
+    padding: 8px;
+    /* Minimal padding */
+  }
+
+  .card-title {
+    font-size: 14px;
+    /* Smaller title */
+  }
+
+  .rating,
+  .genre {
+    font-size: 0.7rem;
+    /* Smaller text */
+  }
+
+  button {
+    padding: 0.3em 0.6em;
+    /* Smaller button */
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Devices (576px - 768px) - Larger Phones & Small Tablets */
+@media (min-width: 576px) and (max-width: 768px) {
+  .container.py-4 {
+    padding: 15px;
+  }
+
+  .h4s {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .row.row-cols-1.row-cols-md-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    flex: 0 0 50%;
+    /* Two cards per row */
+    max-width: 50%;
+    padding: 8px;
+  }
+
+  .card img {
+    height: 220px;
+    /* Adjusted image height */
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .rating,
+  .genre {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 0.4em 0.8em;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Devices (768px - 992px) - Tablets & Small Laptops */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container.py-4 {
+    padding: 20px;
+  }
+
+  .h4s {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .row.row-cols-1.row-cols-md-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    flex: 0 0 33.33%;
+    /* Three cards per row */
+    max-width: 33.33%;
+    padding: 10px;
+  }
+
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .rating,
+  .genre {
+    font-size: 0.85rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+  }
+}
+
+/* Large Devices (992px - 1200px) - Laptops & Desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container.py-4 {
+    padding: 25px;
+  }
+
+  .h4s {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .row.row-cols-1.row-cols-md-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    flex: 0 0 25%;
+    /* Four cards per row */
+    max-width: 25%;
+    padding: 12px;
+  }
+
+  .card img {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 14px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .rating,
+  .genre {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Large Devices (1200px and up) - Large Desktops */
+@media (min-width: 1200px) {
+  .container.py-4 {
+    padding: 30px;
+  }
+
+  .h4s {
+    font-size: 26px;
+    /* Default heading size */
+    margin-bottom: 22px;
+  }
+
+  .row.row-cols-1.row-cols-md-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col {
+    flex: 0 0 20%;
+    /* Five cards per row, as in original design */
+    max-width: 20%;
+    padding: 15px;
+  }
+
+  .card img {
+    height: 300px;
+    /* Default image height */
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .rating,
+  .genre {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    /* Default button size */
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movies </title>
+    <link rel="stylesheet" href="Movies.css">
+    <link rel="stylesheet" href="../Home/style.css">
+    <link rel="stylesheet" href="../Home/media.css">
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../Home/index.html">
+                MOVIE<span style="color: #faaa64;">VERSE</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../Home/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Movies/Movies.html">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../News/News.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../About-us/About_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-us/Contact_us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- search-box -->
+    <div class="search-box">
+        <div class="box">
+            <input type="text" placeholder="Search..." class="search" onkeyup="search()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="container py-4">
+        <h4 class="h4s">Most-Watched</h4>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/MV5BZDU5YWE3MmItMGI0Ny00MWQ4LWE3NDktMjRkNDk5YmFjYTk2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        class="card-img-top" alt="Electric state">
+                    <div class="card-body">
+                        <h5 class="card-title">Electric State</h5>
+                        <p class="rating">★ 7.9/10</p>
+                        <p class="genre"> Action, Animation</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+
+                <div class="card">
+                    <img src="./imges/WhatsApp Image 2025-04-10 at 22.21.48_78f42c75.jpg" class="card-img-top"
+                        alt="spy">
+                    <div class="card-body">
+                        <h5 class="card-title">spy</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Crime, comedy</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/WhatsApp Image 2025-04-10 at 22.22.08_dff7a68e.jpg" class="card-img-top"
+                        alt="face2face">
+                    <div class="card-body">
+                        <h5 class="card-title">Face to face </h5>
+                        <p class="rating">★ 7.2/10</p>
+                        <p class="genre">Romantic, Comedy </p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/1359b3d7ac45f03c62f7c8e6d51df67642aa3c29aecf5b58e95904af304a78d3.jpg"
+                        class="card-img-top" alt="Insomnia">
+                    <div class="card-body">
+                        <h5 class="card-title">Insomnia</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Suspense,mystery</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/Spider-Man_Far_From_Home_poster.jpg" class="card-img-top" alt="Spider-Man">
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man</h5>
+                        <p class="rating">★ 7.6/10</p>
+                        <p class="genre">Animation,action</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <h4 class="h4s">Crime/Action</h4>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/913TjHQ0xFL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Knives Out">
+                    <div class="card-body">
+                        <h5 class="card-title">Knives Out</h5>
+                        <p class="rating">★ 7,8/10</p>
+                        <p class="genre">Crime, Animation</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/_315x420_815de3244d3de7ba516df6ec570cfab96634cf89f826e0e87eb233af9e75e72a.jpg"
+                        class="card-img-top" alt="Fight">
+                    <div class="card-body">
+                        <h5 class="card-title">Fight Club</h5>
+                        <p class="rating">★ 9,7/10</p>
+                        <p class="genre"> Action,Crime</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/1053159-fallout-une-deuxieme-saison-deja-confirmee-apres-un-lancement-explosif.jpg"
+                        class="card-img-top" alt="Fallout">
+                    <div class="card-body">
+                        <h5 class="card-title">Fallout</h5>
+                        <p class="rating">★ 7.2/10</p>
+                        <p class="genre">Action, Drama</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/p_blackpanther_19754_4ac13f07.jpeg" class="card-img-top" alt="Black Panther">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Panther</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Crime, Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/maxresdefault.jpg" class="card-img-top" alt="Marvels">
+                    <div class="card-body">
+                        <h5 class="card-title">The Marvels</h5>
+                        <p class="rating">★ 8.5/10</p>
+                        <p class="genre">Action, Adventure</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container py-4">
+        <h4 class="h4s">Horror</h4>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/_320x_eacc79b75ff7666c325886caa14b9b4a6ded0edf595d09f9f44fa0a811e8902a.jpg"
+                        class="card-img-top" alt="Fight club">
+                    <div class="card-body">
+                        <h5 class="card-title">Halloween</h5>
+                        <p class="rating">★ 9.5/10</p>
+                        <p class="genre">Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/images.jpeg" class="card-img-top" alt="WER">
+                    <div class="card-body">
+                        <h5 class="card-title">WER</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/Scream 1.jpg" class="card-img-top" alt="Scream">
+                    <div class="card-body">
+                        <h5 class="card-title">Scream</h5>
+                        <p class="rating">★ 9/10</p>
+                        <p class="genre">Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/hq720.jpg" class="card-img-top" alt="Purge">
+                    <div class="card-body">
+                        <h5 class="card-title">The Purge</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/MV5BYWM4MzNjMDctMGE2ZC00MTYwLWFhODEtNjU1OWE5ODA3YjhjXkEyXkFqcGc@._V1_ (1).jpg"
+                        class="card-img-top" alt="Turn">
+                    <div class="card-body">
+                        <h5 class="card-title"> Wrong Turn </h5>
+                        <p class="rating">★ 7.6/10</p>
+                        <p class="genre">Horror</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-4">
+        <h4 class="h4s">Romantic/Comedy </h4>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/Theholidayposter.jpg" class="card-img-top" alt="holi day">
+                    <div class="card-body">
+                        <h5 class="card-title"> The Holiday </h5>
+                        <p class="rating">★ 7.9/10</p>
+                        <p class="genre"> Romantic</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+
+                <div class="card">
+                    <img src="./imges/WhatsApp Image 2025-04-10 at 22.24.37_0ac6398a.jpg" class="card-img-top"
+                        alt="Smith">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr&Mrs Smith</h5>
+                        <p class="rating">★ 6.8/10</p>
+                        <p class="genre">Romantic, Comedy</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/WhatsApp Image 2025-04-10 at 22.22.08_dff7a68e.jpg" class="card-img-top"
+                        alt="face2face">
+                    <div class="card-body">
+                        <h5 class="card-title">Face to face </h5>
+                        <p class="rating">★ 8.2/10</p>
+                        <p class="genre">Romantic, Comedy </p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/ride along.jpg" class="card-img-top" alt="Ride Along">
+                    <div class="card-body">
+                        <h5 class="card-title">Ride Along</h5>
+                        <p class="rating">★ 6/10</p>
+                        <p class="genre">Comedy</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="card">
+                    <img src="./imges/_320x_2d2272cce34ba42e4c7061e7960b5f0eb0d0b09ff71e65dd4a58e28553f57bab.jpg"
+                        class="card-img-top" alt="voy!">
+                    <div class="card-body">
+                        <h5 class="card-title">Voy!Voy!Voy!</h5>
+                        <p class="rating">★ 6.6/10</p>
+                        <p class="genre">Comedy</p>
+                        <button> Start Watching</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- wave shape -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave"><path fill="#faaa64" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,112C384,96,480,96,576,112C672,128,768,160,864,154.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+    <footer>
+        <div class="hfoot">
+                <i class="fa-solid fa-clapperboard"></i>
+                <h3>MovieVerse</h3>
+        </div>
+        <div class="container">
+            <div class="box one">
+                <div class="headbox">
+                    <i class="fa-solid fa-film"></i>
+                    <h4 >Lights, Camera, Scroll!</h4>
+                </div>
+                <p class="thanks-text">
+                    Thanks for visiting MovieVerse! Remember life's better with movies. <br>
+                    Whether you laugh, cry, or scream, there's a film for every mood.  
+                    From timeless classics to the latest blockbusters, we're here to keep your screen filled with magic. <br>
+                    Stay tuned for reviews, trailers, and hidden gems you won't find anywhere else.  
+                    And hey! don't forget the popcorn 🍿😉
+                </p>
+            </div>
+            <div class="box">
+                <div class="headbox">
+                    <i class="fa-solid fa-heart"></i>
+                    <h4>Made by</h4>
+                </div>
+                <ul class="made">
+                    <li class="list">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="name">Reham Ahmed Fekry</p>
+                    </li>
+                    <li class="list">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="name">Mariem Abdelbaset Mahmoud</p>
+                    </li>
+                    <li class="list">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="name">Mariam Montaser Abdelwahab</p>
+                    </li>
+                    <li class="list">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="name">Mayar Abdelrahim Mohamed</p>
+                    </li>
+                    <li class="list">
+                        <i class="fa-solid fa-star"></i>
+                        <p class="name">Youstina Edward Alfy</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="headbox">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Contact us</h4>
+                </div>
+                <ul class="contact">
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copy">CopyRight &copy; 2025 - All rights reserved</p>
+    </footer>
+
+    <!-- Bootstrap nav JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News</title>
+  <link rel="stylesheet" href="News.css" />
+
+  <!-- footer -->
+  <link rel="stylesheet" href="../Home/style.css">
+  <link rel="stylesheet" href="../Home/media.css">
+</head>
+
+<body>
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../Home/inde.html">
+        MOVIE<span style="color: #faaa64;">VERSE</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../Home/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Movies/Movies.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../News/News.html">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../About-us/About_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact-us/Contact_us.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <header>
+    <h1>Movies News</h1>
+    <p class="subtitle">Latest updates and reviews from the world of cinema</p>
+  </header>
+
+  <main>
+    <!-- Movie Cards -->
+    <section class="movie-list"> <!-- Fixed typo here: movie-ist -> movie-list -->
+
+      <!-- Movie 1 -->
+      <div class="movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.11_68174fef.jpg" alt="The Outsider Poster" />
+        <div class="movie-info">
+          <h2>The Outsider</h2>
+          <p>
+            Set in post-WWII Japan, an American ex-POW joins the Yakuza after saving one of their own in prison.
+          </p>
+          <div class="details">
+            <p><strong>Actors:</strong> Jared Leto, Tadanobu Asano</p>
+            <p><strong>Author:</strong> Andrew Baldwin</p>
+            <p><strong>Director:</strong> Martin Zandvliet</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie 2 -->
+      <div class="movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.12_05c9f45b.jpg" alt="Back to the Future Poster" />
+        <div class="movie-info">
+          <h2>Back to the Future</h2>
+          <p>
+            Dr. Emmett Brown invents a time machine built into a car, sending Marty McFly to the past...
+          </p>
+          <div class="details">
+            <p><strong>Actors:</strong> Tom Wilson, Billy Zane</p>
+            <p><strong>Author:</strong> Bob Gale</p>
+            <p><strong>Director:</strong> Robert Zemeckis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie 3 -->
+      <div class="movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.12_e3e0d66c.jpg" alt="The Martian Poster" />
+        <div class="movie-info">
+          <h2>The Martian</h2>
+          <p>
+            Astronaut Mark Watney must survive alone on Mars after being presumed dead...
+          </p>
+          <div class="details">
+            <p><strong>Actors:</strong> Matt Damon, Kate Mara</p>
+            <p><strong>Author:</strong> Andy Weir</p>
+            <p><strong>Director:</strong> Ridley Scott</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Trending Movies Section -->
+    <section class="trending-movies">
+      <h2>Trending Movies</h2>
+
+      <div class="trending-movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.11_68174fef.jpg" alt="Trending Movie 1" />
+        <div class="trending-info">
+          <h3>The Matrix</h3>
+          <p>Neo discovers the truth about the simulated reality he lives in...</p>
+          <button>Watch Trailer</button>
+          <button>Like</button>
+        </div>
+      </div>
+
+      <div class="trending-movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.12_05c9f45b.jpg" alt="Trending Movie 2" />
+        <div class="trending-info">
+          <h3>Inception</h3>
+          <p>A thief who enters the minds of others through their dreams...</p>
+          <button>Watch Trailer</button>
+          <button>Like</button>
+        </div>
+      </div>
+
+      <div class="trending-movie-card">
+        <img src="./images/WhatsApp Image 2025-04-19 at 20.41.12_e3e0d66c.jpg" alt="Trending Movie 3" />
+        <div class="trending-info">
+          <h3>Interstellar</h3>
+          <p>A group of explorers travel through a wormhole to ensure humanity's survival...</p>
+          <button>Watch Trailer</button>
+          <button>Like</button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <!-- wave shape -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
+    <path fill="#faaa64" fill-opacity="1"
+      d="M0,192L48,176C96,160,192,128,288,112C384,96,480,96,576,112C672,128,768,160,864,154.7C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+
+  <footer>
+    <div class="hfoot">
+      <i class="fa-solid fa-clapperboard"></i>
+      <h3>MovieVerse</h3>
+    </div>
+    <div class="container">
+      <div class="box one">
+        <div class="headbox">
+          <i class="fa-solid fa-film"></i>
+          <h4>Lights, Camera, Scroll!</h4>
+        </div>
+        <p class="thanks-text">
+          Thanks for visiting MovieVerse! Remember life's better with movies. <br>
+          Whether you laugh, cry, or scream, there's a film for every mood.
+          From timeless classics to the latest blockbusters, we're here to keep your screen filled with magic. <br>
+          Stay tuned for reviews, trailers, and hidden gems you won't find anywhere else.
+          And hey! don't forget the popcorn 🍿😉
+        </p>
+      </div>
+      <div class="box">
+        <div class="headbox">
+          <i class="fa-solid fa-heart"></i>
+          <h4>Made by</h4>
+        </div>
+        <ul class="made">
+          <li class="list">
+            <i class="fa-solid fa-star"></i>
+            <p class="name">Reham Ahmed Fekry</p>
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-star"></i>
+            <p class="name">Mariem Abdelbaset Mahmoud</p>
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-star"></i>
+            <p class="name">Mariam Montaser Abdelwahab</p>
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-star"></i>
+            <p class="name">Mayar Abdelrahim Mohamed</p>
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-star"></i>
+            <p class="name">Youstina Edward Alfy</p>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="headbox">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Contact us</h4>
+        </div>
+        <ul class="contact">
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">CopyRight &copy; 2025 - All rights reserved</p>
+  </footer>
+
+  <!-- Bootstrap nav JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
