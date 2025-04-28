@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        // أول ما الصفحة تحمل بالكامل
+        window.onload = function() {
+            // نروح لفولدر Home على طول
+            window.location.replace("Home/index.html");
+        };
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>جارٍ التحويل إلى الصفحة الرئيسية...</h1>
+    <p>إذا لم يتم التحويل تلقائيًا <a href="Home/index.html">اضغط هنا</a>.</p>
+</body>
+</html>
